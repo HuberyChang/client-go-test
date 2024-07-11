@@ -1,3 +1,7 @@
+/*
+	http://timd.cn/k8s/client-go/
+*/
+
 package main
 
 import (
