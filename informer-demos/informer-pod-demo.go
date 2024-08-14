@@ -43,7 +43,7 @@ func main() {
 				oldPod := oldObj.(*v1.Pod)
 				newPod := newObj.(*v1.Pod)
 				if oldPod.Status.Phase != newPod.Status.Phase {
-					fmt.Printf("Pod %s is updated\n", newPod.Name)
+					fmt.Printf("Pod %s is updated\n", newPod.Name, newPod.GetName())
 				}
 			},
 			DeleteFunc: func(obj interface{}) {
